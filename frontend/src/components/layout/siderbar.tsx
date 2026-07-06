@@ -1,0 +1,163 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
+import { useAppContext } from "@/contexts/app-context";
+import { usePermissionsContext } from "@/contexts/permissions-context";
+
+const menuItems = [
+  {
+    category: "Market",
+    items: [
+      { name: "Overview", href: "/" },
+      { name: "Assets", href: "/assets" },
+      { name: "Listings", href: "/listings" },
+    ],
+  },
+  {
+    category: "Investor",
+    items: [
+      { name: "My Portfolio", href: "/investor" },
+      { name: "Investor Identity", href: "/investor/identity" },
+    ],
+  },
+  {
+    category: "Issuer",
+    items: [
+      { name: "Issuer Portal", href: "/issuer" },
+      { name: "Tokenize Asset", href: "/issuer/submit-request" },
+    ],
+  },
+  {
+    category: "Trusted Providers",
+    items: [
+      { name: "Claim Provider", href: "/trusted-provider/claim-provider" },
+      { name: "Provider FID", href: "/trusted-provider/provider-fid" },
+    ],
+  },
+  {
+    category: "Admin",
+    items: [
+      { name: "Asset Issuance", href: "/issuance" },
+      { name: "Token Admin", href: "/token-admin" },
+      { name: "Compliance", href: "/compliance" },
+      { name: "Personnel", href: "/personnel" },
+    ],
+  },
+];
+
+export function Sidebar() {
+  const pathname = usePathname();
+  const { address } = useAppContext();
+  const {
+    canSeeAdminBlock,
+    canSeeTrustedProviders,
+  } = usePermissionsContext();
+
+  const visibleItems = menuItems.map((section) => ({
+    ...section,
+    items: section.items.filter(() => {
+      if (section.category === "Trusted Providers") return canSeeTrustedProviders;
+      if (section.category === "Admin") return canSeeAdminBlock;
+      return true;
+    }),
+  })).filter((section) => section.items.length > 0);
+
+  return (
+    <aside className="w-70 h-[calc(100vh-40px)] m-5 flex flex-col app-sidebar rounded-[26px] overflow-hidden shrink-0 fixed left-0 top-0 border-r-2 border-[#CBA135]/60">
+      {/* Logo Section */}
+      <div className="p-8 pt-6 pb-6">
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/FracksBlack.svg"
+            alt="FRACKS"
+            width={140}
+            height={40}
+            className="h-7 w-auto"
+            style={{ width: "auto" }}
+            priority
+          />
+        </Link>
+      </div>
+
+      <div className="flex-1 px-6 py-2 space-y-5 overflow-y-auto">
+        {visibleItems.map((section) => (
+          <div key={section.category} className="space-y-1">
+            <h3 className="px-3 text-[11px] font-bold uppercase tracking-[0.18em] text-slate-400">
+              {section.category}
+            </h3>
+            <div className="space-y-0.5">
+              {section.items.map((item) => {
+                const href =
+                  item.href === "/investor" && address
+                    ? `/investor/${address}`
+                    : item.href;
+                const isActive =
+                  item.href === "/investor"
+                    ? pathname.startsWith("/investor") &&
+                      !pathname.startsWith("/investor/identity")
+                    : pathname === item.href;
+                return (
+                  <Link
+                    key={item.name}
+                    href={href}
+                    className={cn(
+                      "relative flex items-center px-3 py-2.5 text-sm font-medium transition-colors",
+                      isActive
+                        ? "text-slate-950 font-semibold"
+                        : "text-slate-500 hover:text-slate-900",
+                    )}
+                  >
+                    {isActive && (
+                      <div className="absolute left-0 h-5 w-1 bg-[#CBA135] rounded-r-full" />
+                    )}
+                    <span
+                      className={cn(
+                        isActive ? "translate-x-1.5" : "",
+                        "transition-transform",
+                      )}
+                    >
+                      {item.name}
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Bottom CTA Card */}
+      <div className="p-4 mt-auto">
+        <div className="rounded-2xl p-5 text-white relative overflow-hidden">
+          {/* Background Image */}
+          <Image
+            src="/footer-cta-bgimage.png"
+            alt="CTA Background"
+            fill
+            sizes="(max-width: 1024px) 0px, 280px"
+            className="object-cover rounded-2xl"
+            priority
+            loading="eager"
+          />
+
+          {/* Overlay for better text readability */}
+          <div className="absolute inset-0 bg-gradient-to-br from-[#1E40AF]/60 to-[#172554]/60 rounded-2xl" />
+
+          <h3 className="relative z-10 text-xl font-semibold leading-tight mb-4">
+            Own <br />
+            Real Assets <br />
+            On-Chain.
+          </h3>
+
+          <Button className="relative z-10 w-full bg-[#CBA135] hover:bg-[#b58e2a] text-white border-0 font-medium">
+            Explore Now
+          </Button>
+        </div>
+      </div>
+    </aside>
+  );
+}

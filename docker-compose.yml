@@ -1,0 +1,126 @@
+services:
+  db:
+    image: postgres:17-alpine
+    container_name: fracks-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-1234}
+      POSTGRES_DB: ${DB_NAME:-rwaPlatformDB}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "7432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+      start_period: 10s
+    networks:
+      - backend-db
+
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: fracks-migrate
+    env_file:
+      - ./backend/.env
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-1234}@db:5432/${DB_NAME:-rwaPlatformDB}?schema=public
+    command: ["pnpm", "prisma", "db", "push"]
+    restart: "no"
+    networks:
+      - backend-db
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: fracks-backend
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    environment:
+      NODE_ENV: production
+      PORT: 4082
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-1234}@db:5432/${DB_NAME:-rwaPlatformDB}?schema=public
+    ports:
+      - "4082:4082"
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "wget -qO- http://localhost:4082/assets >/dev/null 2>&1 || exit 1",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    networks:
+      - backend-db
+      - frontend-public
+
+  indexer:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    container_name: fracks-indexer
+    restart: unless-stopped
+    env_file:
+      - ./backend/.env
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+      backend:
+        condition: service_started
+    environment:
+      DATABASE_URL: postgresql://${DB_USER:-postgres}:${DB_PASSWORD:-1234}@db:5432/${DB_NAME:-rwaPlatformDB}?schema=public
+    command: ["pnpm", "run", "indexer:once"]
+    networks:
+      - backend-db
+      - backend-egress
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      secrets:
+        - frontend_env
+    container_name: fracks-frontend
+    restart: unless-stopped
+    env_file:
+      - ./frontend/.env.local
+    depends_on:
+      backend:
+        condition: service_started
+    environment:
+      BACKEND_URL: http://backend:4082
+      PORT: 4083
+    ports:
+      - "4083:4083"
+    networks:
+      - frontend-public
+
+secrets:
+  frontend_env:
+    file: ./frontend/.env.local
+
+volumes:
+  postgres_data:
+
+networks:
+  backend-db:
+  backend-egress:
+  frontend-public:
