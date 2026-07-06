@@ -1,5 +1,5 @@
 {
-  "address": "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj",
+  "address": "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx",
   "metadata": {
     "name": "fracks_token",
     "version": "0.1.0",
@@ -376,7 +376,7 @@
         },
         {
           "name": "irs_program",
-          "address": "CnAZUQ9jFm2eLGA8d8ek1gpLwGc6xZqvnbyJ9s7swbWc"
+          "address": "4upzjnTmKEjgDCWTvpfZ1rQ5iphLMDth3BivRKoF6pFZ"
         }
       ],
       "args": [
@@ -527,11 +527,11 @@
         },
         {
           "name": "controller_program",
-          "address": "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj"
+          "address": "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx"
         },
         {
           "name": "hook_program",
-          "address": "9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5"
+          "address": "87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u"
         },
         {
           "name": "transfer_approval",
@@ -1321,7 +1321,7 @@
         },
         {
           "name": "irs_program",
-          "address": "CnAZUQ9jFm2eLGA8d8ek1gpLwGc6xZqvnbyJ9s7swbWc"
+          "address": "4upzjnTmKEjgDCWTvpfZ1rQ5iphLMDth3BivRKoF6pFZ"
         },
         {
           "name": "token_mint_account",
@@ -1340,11 +1340,11 @@
         },
         {
           "name": "controller_program",
-          "address": "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj"
+          "address": "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx"
         },
         {
           "name": "hook_program",
-          "address": "9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5"
+          "address": "87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u"
         },
         {
           "name": "transfer_approval",
@@ -1803,11 +1803,11 @@
         },
         {
           "name": "controller_program",
-          "address": "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj"
+          "address": "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx"
         },
         {
           "name": "hook_program",
-          "address": "9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5"
+          "address": "87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u"
         },
         {
           "name": "transfer_approval",

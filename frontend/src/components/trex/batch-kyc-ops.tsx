@@ -166,7 +166,7 @@ export function BatchKYCOps({ tokenContract, onUpdate }: BatchKYCOpsProps) {
 
   const downloadTemplate = () => {
     const csv =
-      "address,status\nFb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW,Approved\nHnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV,Revoked\n9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L,Pending";
+      "address,status\nEKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L,Approved\ni7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB,Revoked\nQ3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j,Pending";
     const blob = new Blob([csv], { type: "text/csv" });
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement("a");

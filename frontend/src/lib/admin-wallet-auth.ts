@@ -17,9 +17,12 @@ function bytesToBase64(bytes: Uint8Array) {
 }
 
 async function sha256Hex(value: string) {
+  const encoded = new TextEncoder().encode(value);
+  const data = new ArrayBuffer(encoded.byteLength);
+  new Uint8Array(data).set(encoded);
   const hash = await window.crypto.subtle.digest(
     "SHA-256",
-    new TextEncoder().encode(value),
+    data,
   );
   return Array.from(new Uint8Array(hash), (byte) =>
     byte.toString(16).padStart(2, "0"),

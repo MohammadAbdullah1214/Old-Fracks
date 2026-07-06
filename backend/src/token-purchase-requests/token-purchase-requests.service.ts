@@ -115,7 +115,7 @@ function parseCountryCaps(value: unknown): Array<{ country: number; cap: number 
 export class TokenPurchaseRequestsService {
   private readonly connection = new Connection(getIndexerConfig().rpcEndpoint, 'confirmed');
   private readonly maxInvestorsProgram = new PublicKey(
-    process.env.MOD_MAX_INVESTORS || '2zfQv7RxmL5BAgXXFagZXBNby4Q41YGH6hnSJAcsXQeU',
+    process.env.MOD_MAX_INVESTORS || '9HwS3VGkNWDWvdF9hzy6AnsNkQZ3kn2K8ssUmgGoffVq',
   );
 
   constructor(

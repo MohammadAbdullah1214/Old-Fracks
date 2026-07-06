@@ -2,7 +2,7 @@ use anchor_lang::prelude::*;
 
 pub mod utils;
 
-declare_id!("Fb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW");
+declare_id!("EKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L");
 
 const COUNTRY_MAX: u16 = 999;
 const FID_SPACE: usize = 8 + 32 + 32 + 32 + 4 + 1 + 2 + 1;

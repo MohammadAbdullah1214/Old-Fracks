@@ -6,7 +6,7 @@ use utils::{
     deserialize_view, ensure_bound_registry, find_wallet_identity, verify_claim_for_topic,
 };
 
-declare_id!("HQqgbvfmSzY1yEyhVbyhYqSsbVrRmjUnPmm2nE4ZwRvZ");
+declare_id!("GKGmC9g1cEp1uUNgx2josYHbYzBk9yHuzA4Le3i1oNrh");
 
 const MAX_IDENTITY_AGENTS: usize = 10;
 const IRP_SPACE: usize = 8 + 32 + 32 + 32 + 32 + 32 + 4 + (32 * MAX_IDENTITY_AGENTS) + 8 + 1;

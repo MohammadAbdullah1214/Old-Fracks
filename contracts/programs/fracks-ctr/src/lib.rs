@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig");
+declare_id!("QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep");
 
 const MAX_TOPICS: usize = 20;
 const CTR_SPACE: usize = 8 + 32 + 32 + 4 + (8 * MAX_TOPICS) + 1;

@@ -65,23 +65,23 @@ These are the active devnet programs the frontend defaults to in [frontend/src/l
 
 | Component | Program ID |
 | --- | --- |
-| Factory | `FtrzQ1hhjL7vbEPAxLBeLgrmomanSVj9UpV6LLJ5TYFS` |
-| Token | `6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj` |
-| Token hook | `9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5` |
-| FID | `Fb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW` |
-| IRP | `HQqgbvfmSzY1yEyhVbyhYqSsbVrRmjUnPmm2nE4ZwRvZ` |
-| IRS | `CnAZUQ9jFm2eLGA8d8ek1gpLwGc6xZqvnbyJ9s7swbWc` |
-| TIR | `9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L` |
-| CTR | `8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig` |
-| Compliance | `HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV` |
-| Max investors module | `2zfQv7RxmL5BAgXXFagZXBNby4Q41YGH6hnSJAcsXQeU` |
-| Country restrict module | `4ChDAU375yPJXZLG5XqtbbKdirAr3xHU5vnhppUjgu2d` |
-| Max balance module | `HEjNS1GC9nffSdXbi6aQ9WNQBNFyJQBGUshyrSeLpE9j` |
-| Max transfer module | `4gJbGvgnBhJ91gByKNo7eEVmCbsUkK5opyeo3M1VEJsy` |
-| Lockup module | `EvDVqTUjs3ZsAUfPQdyVskYCzoPTbWybF5tcBtWYfAuz` |
-| Daily limit module | `5dfHskP5MijaDY2gYsE44CPAuomt1vWgbPdGi62cquoT` |
-| Supply cap module | `6tfb66btx776wdsPS5EHDTwWnvPSLJQje7gFQ4EDGxGc` |
-| Country cap module | `EcLffdKdSsCpNczazKsSeRw7FCN6vVjKAEMH5CZGBndr` |
+| Factory | `2gBSmf6bnGq5ZXHhHo6tdj21fKE9rzrYWaFeJV9NxrR5` |
+| Token | `C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx` |
+| Token hook | `87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u` |
+| FID | `EKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L` |
+| IRP | `GKGmC9g1cEp1uUNgx2josYHbYzBk9yHuzA4Le3i1oNrh` |
+| IRS | `4upzjnTmKEjgDCWTvpfZ1rQ5iphLMDth3BivRKoF6pFZ` |
+| TIR | `Q3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j` |
+| CTR | `QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep` |
+| Compliance | `i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB` |
+| Max investors module | `9HwS3VGkNWDWvdF9hzy6AnsNkQZ3kn2K8ssUmgGoffVq` |
+| Country restrict module | `GiFKARG9JRwKJfxLVEKM4Ax71AKMaTTPiJ4fG3inCwkP` |
+| Max balance module | `VVJZG5guG4Qho4U97wC5TjAJpbQtwNqUf7se2NiTJy7` |
+| Max transfer module | `HBKNkLXCNDjGmdVNf5Yvspe6jcWxCQ8bEKjVniFuvykz` |
+| Lockup module | `3x4rMAgfGVJ9g5AsjYXmm1tiFGmHduT3UkxVkNmFtRRT` |
+| Daily limit module | `9yGSD9dAJUXjsvdUN2uyHy3Kfj2nCjxEhppYLgjFf6Xd` |
+| Supply cap module | `6c4HgfnPaqnKPjc87xGMapvjj2PNVPbmAuceUPnsRmpH` |
+| Country cap module | `Fb93EdDho5pfeuSYu8RezfDGguNfYngB8aFtgDbgLLj3` |
 
 ## Frontend Layout
 

@@ -44,31 +44,31 @@ export const TOKEN_2022_PROGRAM_ID = new PublicKey(
     "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb"
 );
 export const FACTORY_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_FACTORY_PROGRAM_ID ?? "FtrzQ1hhjL7vbEPAxLBeLgrmomanSVj9UpV6LLJ5TYFS"
+  process.env.NEXT_PUBLIC_FACTORY_PROGRAM_ID ?? "2gBSmf6bnGq5ZXHhHo6tdj21fKE9rzrYWaFeJV9NxrR5"
 );
 export const TOKEN_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_TOKEN_PROGRAM_ID ?? "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj"
+  process.env.NEXT_PUBLIC_TOKEN_PROGRAM_ID ?? "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx"
 );
 export const TOKEN_HOOK_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_TOKEN_HOOK_PROGRAM_ID ?? "9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5"
+  process.env.NEXT_PUBLIC_TOKEN_HOOK_PROGRAM_ID ?? "87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u"
 );
 export const COMPLIANCE_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_COMPLIANCE_PROGRAM_ID ?? "HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV"
+  process.env.NEXT_PUBLIC_COMPLIANCE_PROGRAM_ID ?? "i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB"
 );
 export const IRP_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_IRP_PROGRAM_ID ?? "HQqgbvfmSzY1yEyhVbyhYqSsbVrRmjUnPmm2nE4ZwRvZ"
+  process.env.NEXT_PUBLIC_IRP_PROGRAM_ID ?? "GKGmC9g1cEp1uUNgx2josYHbYzBk9yHuzA4Le3i1oNrh"
 );
 export const IRS_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_IRS_PROGRAM_ID ?? "CnAZUQ9jFm2eLGA8d8ek1gpLwGc6xZqvnbyJ9s7swbWc"
+  process.env.NEXT_PUBLIC_IRS_PROGRAM_ID ?? "4upzjnTmKEjgDCWTvpfZ1rQ5iphLMDth3BivRKoF6pFZ"
 );
 export const FID_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_FID_PROGRAM_ID ?? "Fb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW"
+  process.env.NEXT_PUBLIC_FID_PROGRAM_ID ?? "EKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L"
 );
 export const TIR_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_TIR_PROGRAM_ID ?? "9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L"
+  process.env.NEXT_PUBLIC_TIR_PROGRAM_ID ?? "Q3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j"
 );
 export const CTR_PROGRAM_ID = new PublicKey(
-  process.env.NEXT_PUBLIC_CTR_PROGRAM_ID ?? "8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig"
+  process.env.NEXT_PUBLIC_CTR_PROGRAM_ID ?? "QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep"
 );
 
 // ─── Governance / Deployment PDAs ────────────────────────────────────────────
@@ -90,35 +90,35 @@ export const FRONTEND_DEPLOYMENT_PDA = new PublicKey(
 
 export const MOD_MAX_INVESTORS = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_MAX_INVESTORS ??
-    "2zfQv7RxmL5BAgXXFagZXBNby4Q41YGH6hnSJAcsXQeU"
+    "9HwS3VGkNWDWvdF9hzy6AnsNkQZ3kn2K8ssUmgGoffVq"
 );
 export const MOD_COUNTRY_RESTRICT = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_COUNTRY_RESTRICT ??
-    "4ChDAU375yPJXZLG5XqtbbKdirAr3xHU5vnhppUjgu2d"
+    "GiFKARG9JRwKJfxLVEKM4Ax71AKMaTTPiJ4fG3inCwkP"
 );
 export const MOD_MAX_BALANCE = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_MAX_BALANCE ??
-    "HEjNS1GC9nffSdXbi6aQ9WNQBNFyJQBGUshyrSeLpE9j"
+    "VVJZG5guG4Qho4U97wC5TjAJpbQtwNqUf7se2NiTJy7"
 );
 export const MOD_MAX_TRANSFER = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_MAX_TRANSFER ??
-    "4gJbGvgnBhJ91gByKNo7eEVmCbsUkK5opyeo3M1VEJsy"
+    "HBKNkLXCNDjGmdVNf5Yvspe6jcWxCQ8bEKjVniFuvykz"
 );
 export const MOD_LOCKUP = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_LOCKUP ??
-    "EvDVqTUjs3ZsAUfPQdyVskYCzoPTbWybF5tcBtWYfAuz"
+    "3x4rMAgfGVJ9g5AsjYXmm1tiFGmHduT3UkxVkNmFtRRT"
 );
 export const MOD_DAILY_LIMIT = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_DAILY_LIMIT ??
-    "5dfHskP5MijaDY2gYsE44CPAuomt1vWgbPdGi62cquoT"
+    "9yGSD9dAJUXjsvdUN2uyHy3Kfj2nCjxEhppYLgjFf6Xd"
 );
 export const MOD_SUPPLY_CAP = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_SUPPLY_CAP ??
-    "6tfb66btx776wdsPS5EHDTwWnvPSLJQje7gFQ4EDGxGc"
+    "6c4HgfnPaqnKPjc87xGMapvjj2PNVPbmAuceUPnsRmpH"
 );
 export const MOD_COUNTRY_CAP = new PublicKey(
   process.env.NEXT_PUBLIC_MOD_COUNTRY_CAP ??
-    "EcLffdKdSsCpNczazKsSeRw7FCN6vVjKAEMH5CZGBndr"
+    "Fb93EdDho5pfeuSYu8RezfDGguNfYngB8aFtgDbgLLj3"
 );
 
 // ─── PDA Seed Constants ───────────────────────────────────────────────────────

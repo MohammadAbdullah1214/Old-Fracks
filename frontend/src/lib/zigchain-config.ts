@@ -70,32 +70,32 @@ export const TREX_CONTRACTS = {
   identityRegistry:
     process.env.NEXT_PUBLIC_IRP_PROGRAM_ID ||
     process.env.NEXT_PUBLIC_FRACKS_IRP ||
-    'HQqgbvfmSzY1yEyhVbyhYqSsbVrRmjUnPmm2nE4ZwRvZ',
+    'GKGmC9g1cEp1uUNgx2josYHbYzBk9yHuzA4Le3i1oNrh',
   trustedIssuers:
     process.env.NEXT_PUBLIC_TIR_PROGRAM_ID ||
     process.env.NEXT_PUBLIC_FRACKS_TIR ||
-    '9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L',
+    'Q3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j',
   claimTopics:
     process.env.NEXT_PUBLIC_CTR_PROGRAM_ID ||
     process.env.NEXT_PUBLIC_FRACKS_CTR ||
-    '8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig',
+    'QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep',
   compliance:
     process.env.NEXT_PUBLIC_COMPLIANCE_PROGRAM_ID ||
     process.env.NEXT_PUBLIC_FRACKS_COMPLIANCE ||
-    'HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV',
+    'i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB',
 
   onchainIdCodeId: 0,
 
   factory:
     process.env.NEXT_PUBLIC_FACTORY_PROGRAM_ID ||
     process.env.NEXT_PUBLIC_FRACKS_FACTORY ||
-    'FtrzQ1hhjL7vbEPAxLBeLgrmomanSVj9UpV6LLJ5TYFS',
+    '2gBSmf6bnGq5ZXHhHo6tdj21fKE9rzrYWaFeJV9NxrR5',
 };
 
 export const EXAMPLE_IDENTITIES = {
   issuer:
     process.env.NEXT_PUBLIC_ISSUER_IDENTITY ||
-    'Fb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW',
+    'EKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L',
   investor:
     process.env.NEXT_PUBLIC_INVESTOR_IDENTITY ||
     '11111111111111111111111111111111',

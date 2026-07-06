@@ -670,48 +670,48 @@ function parseIssuerEntry(account: AccountInfo<Buffer>) {
 
 function getCtrProgramId() {
   return new PublicKey(
-    process.env.FRACKS_CTR || "8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig",
+    process.env.FRACKS_CTR || "QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep",
   );
 }
 
 function getTirProgramId() {
   return new PublicKey(
-    process.env.FRACKS_TIR || "9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L",
+    process.env.FRACKS_TIR || "Q3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j",
   );
 }
 
 const MODULE_PROGRAM_IDS = {
   maxInvestors: () =>
     new PublicKey(
-      process.env.MOD_MAX_INVESTORS || "2zfQv7RxmL5BAgXXFagZXBNby4Q41YGH6hnSJAcsXQeU",
+      process.env.MOD_MAX_INVESTORS || "9HwS3VGkNWDWvdF9hzy6AnsNkQZ3kn2K8ssUmgGoffVq",
     ).toBase58(),
   countryRestrict: () =>
     new PublicKey(
-      process.env.MOD_COUNTRY_RESTRICT || "4ChDAU375yPJXZLG5XqtbbKdirAr3xHU5vnhppUjgu2d",
+      process.env.MOD_COUNTRY_RESTRICT || "GiFKARG9JRwKJfxLVEKM4Ax71AKMaTTPiJ4fG3inCwkP",
     ).toBase58(),
   maxBalance: () =>
     new PublicKey(
-      process.env.MOD_MAX_BALANCE || "HEjNS1GC9nffSdXbi6aQ9WNQBNFyJQBGUshyrSeLpE9j",
+      process.env.MOD_MAX_BALANCE || "VVJZG5guG4Qho4U97wC5TjAJpbQtwNqUf7se2NiTJy7",
     ).toBase58(),
   maxTransfer: () =>
     new PublicKey(
-      process.env.MOD_MAX_TRANSFER || "4gJbGvgnBhJ91gByKNo7eEVmCbsUkK5opyeo3M1VEJsy",
+      process.env.MOD_MAX_TRANSFER || "HBKNkLXCNDjGmdVNf5Yvspe6jcWxCQ8bEKjVniFuvykz",
     ).toBase58(),
   lockup: () =>
     new PublicKey(
-      process.env.MOD_LOCKUP || "EvDVqTUjs3ZsAUfPQdyVskYCzoPTbWybF5tcBtWYfAuz",
+      process.env.MOD_LOCKUP || "3x4rMAgfGVJ9g5AsjYXmm1tiFGmHduT3UkxVkNmFtRRT",
     ).toBase58(),
   dailyLimit: () =>
     new PublicKey(
-      process.env.MOD_DAILY_LIMIT || "5dfHskP5MijaDY2gYsE44CPAuomt1vWgbPdGi62cquoT",
+      process.env.MOD_DAILY_LIMIT || "9yGSD9dAJUXjsvdUN2uyHy3Kfj2nCjxEhppYLgjFf6Xd",
     ).toBase58(),
   supplyCap: () =>
     new PublicKey(
-      process.env.MOD_SUPPLY_CAP || "6tfb66btx776wdsPS5EHDTwWnvPSLJQje7gFQ4EDGxGc",
+      process.env.MOD_SUPPLY_CAP || "6c4HgfnPaqnKPjc87xGMapvjj2PNVPbmAuceUPnsRmpH",
     ).toBase58(),
   countryCap: () =>
     new PublicKey(
-      process.env.MOD_COUNTRY_CAP || "EcLffdKdSsCpNczazKsSeRw7FCN6vVjKAEMH5CZGBndr",
+      process.env.MOD_COUNTRY_CAP || "Fb93EdDho5pfeuSYu8RezfDGguNfYngB8aFtgDbgLLj3",
     ).toBase58(),
 };
 
@@ -804,7 +804,7 @@ function formatBaseUnits(value: bigint, decimals: number) {
 
 function deriveOwnerStatePDA(tokenMint: PublicKey): [PublicKey, number] {
   const tokenProgram = new PublicKey(
-    process.env.FRACKS_TOKEN_PROGRAM || "6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj",
+    process.env.FRACKS_TOKEN_PROGRAM || "C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx",
   );
 
   return PublicKey.findProgramAddressSync(

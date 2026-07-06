@@ -280,12 +280,12 @@ function detailRole(index: number): string {
 }
 
 const DEPLOYED_PROGRAM_IDS = {
-  token: new PublicKey("6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj"),
-  fid: new PublicKey("Fb2roXDWjEaZwWJvxAWJTCRsK4Hy4V64MuCwoGXWMUtW"),
-  irs: new PublicKey("CnAZUQ9jFm2eLGA8d8ek1gpLwGc6xZqvnbyJ9s7swbWc"),
-  tir: new PublicKey("9bgANehpsEDdgyo5DwpY36wmnPdpCihSiAP9TLoBBf4L"),
-  ctr: new PublicKey("8MuWrtbZ1zPzrDhSKPjDd78SMQAMtBuprPnc1Zam1Gig"),
-  compliance: new PublicKey("HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV"),
+  token: new PublicKey("C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx"),
+  fid: new PublicKey("EKwRHxKnE4sTsDjK4ExJsmtxi4WEvheRWteZTewJmh2L"),
+  irs: new PublicKey("4upzjnTmKEjgDCWTvpfZ1rQ5iphLMDth3BivRKoF6pFZ"),
+  tir: new PublicKey("Q3NDBxHotwcaNZMix5UJt2aa7fhCQoucMqGnvBKne6j"),
+  ctr: new PublicKey("QhFoZ7PLJGjetbWrVo896zkcLFmgi4gWirhqZj4Yiep"),
+  compliance: new PublicKey("i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB"),
 } as const;
 
 // ─── TokenService ─────────────────────────────────────────────────────────────

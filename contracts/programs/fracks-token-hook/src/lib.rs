@@ -22,13 +22,13 @@ use spl_tlv_account_resolution::{
 };
 use spl_transfer_hook_interface::instruction::ExecuteInstruction;
 
-declare_id!("9JrgWtW4UrQoC3tVQRxWBBEQPjDJ2QFDzAVAvSzGtPJ5");
+declare_id!("87h25q5Z6PjMEkL9gwkxu2E7TBuEbVdvEMEYr7CGbP5u");
 
-const FRACKS_TOKEN_PROGRAM_ID: Pubkey = pubkey!("6Naj8HsuNdUJQyyzmPssm1mZRDF7F5VMQ91n9QyMoyGj");
-const FRACKS_COMPLIANCE_PROGRAM_ID: Pubkey = pubkey!("HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV");
-const MOD_MAX_INVESTORS_PROGRAM_ID: Pubkey = pubkey!("2zfQv7RxmL5BAgXXFagZXBNby4Q41YGH6hnSJAcsXQeU");
-const MOD_DAILY_LIMIT_PROGRAM_ID: Pubkey = pubkey!("5dfHskP5MijaDY2gYsE44CPAuomt1vWgbPdGi62cquoT");
-const MOD_COUNTRY_CAP_PROGRAM_ID: Pubkey = pubkey!("EcLffdKdSsCpNczazKsSeRw7FCN6vVjKAEMH5CZGBndr");
+const FRACKS_TOKEN_PROGRAM_ID: Pubkey = pubkey!("C3xxp8iqqZasX7rgrJHfCUULSQFLGdB5QdgDfBjRqCcx");
+const FRACKS_COMPLIANCE_PROGRAM_ID: Pubkey = pubkey!("i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB");
+const MOD_MAX_INVESTORS_PROGRAM_ID: Pubkey = pubkey!("9HwS3VGkNWDWvdF9hzy6AnsNkQZ3kn2K8ssUmgGoffVq");
+const MOD_DAILY_LIMIT_PROGRAM_ID: Pubkey = pubkey!("9yGSD9dAJUXjsvdUN2uyHy3Kfj2nCjxEhppYLgjFf6Xd");
+const MOD_COUNTRY_CAP_PROGRAM_ID: Pubkey = pubkey!("Fb93EdDho5pfeuSYu8RezfDGguNfYngB8aFtgDbgLLj3");
 const TRANSFER_APPROVAL_SPACE: usize = 8 + (32 * 6) + (8 * 3) + (2 * 2) + 1 + 1 + 1 + 1;
 const BASE_EXTRA_METAS: usize = 5;
 const MAX_MODULE_EXTRA_METAS: usize = 4;

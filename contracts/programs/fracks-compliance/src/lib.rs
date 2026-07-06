@@ -9,7 +9,7 @@ use mod_max_investors::cpi::accounts::MutateModule as MutateMaxInvestorsModule;
 use mod_supply_cap::cpi::accounts::MutateModule as MutateSupplyCapModule;
 use solana_program::hash::hash;
 
-declare_id!("HnJiNrmDeVFZksgEXaQwyVqHXQLRcyqXEksbYhkiPFFV");
+declare_id!("i7oNP2YnbgKHPMojxKb9XSPg9iKFXLfCRbjLJkJZFPB");
 
 const MAX_MODULES: usize = 15;
 const COMPLIANCE_SPACE: usize = 8 + 32 + 32 + 4 + (32 * MAX_MODULES) + 1 + 1;
